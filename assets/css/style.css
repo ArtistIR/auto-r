@@ -2,6 +2,9 @@
 *{
     transition: all .15s linear;
 }
+*:focus{
+    border: none;
+}
 body{
     font-family: 'Nunito Sans', sans-serif;
     color: #181A15;
@@ -768,4 +771,71 @@ a.footer_sup_item{
 .second_nav_inner ul li.active::after{
     content: "";
     display: none;
+}
+
+/*SEARCH*/
+.search{
+    border-bottom: 1px #DBDBDB solid;
+}
+.search_form{
+    padding: 48px 0 32px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.search_form_inner{
+    display: flex;
+    flex-direction: column;
+}
+.search_form_inner label{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #181A15;
+    padding-bottom: 4px;
+}
+.search_form_inner_item{
+    display: block;
+    box-sizing: border-box;
+    width: 340px;
+    height: 74px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #181A15;
+
+    background-color: #F6F6F6;
+    border-color: #DBDBDB;
+    padding-left: 24px;
+}
+.search_form_inner_item:hover { 
+    border-color: #E5322E; 
+    background-color: #fff;
+} 
+.search_form_inner_item:focus { 
+    border-color: #E5322E; 
+    color: #222;
+    outline: none; 
+}
+.search_btn{
+    width: 228px;
+    height: 74px;
+}
+.reset_btn{
+    text-align: right;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    text-decoration-line: underline;
+    color: #9F9F9F;
+
+    background-color: transparent;
+    border: none;
+    padding-bottom: 4px;
+}
+.reset_btn:hover{
+    background-color: none;
+    color: #E5322E;
 }

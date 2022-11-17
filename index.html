@@ -16,7 +16,7 @@
 
     <link rel="shortcut icon" href="favicon.png" type="image/png">
 
-    <title>АВТО-RRR</title>
+    <title>АВТО-R</title>
 </head>
 <body>
     <header class="header">
@@ -317,8 +317,9 @@
                 <form action="" class="search_form">
                     <div class="search_form_inner">
                         <label for="cars">Бренд</label>
-                        <select name="cars">
-                            <option value="volvo" selected>Volvo</option>
+                        <select name="cars" class="search_form_inner_item">
+                            <option value="all_brand" selected>Выберите бренд</option>
+                            <option value="volvo">Volvo</option>
                             <option value="saab">Saab</option>
                             <option value="fiat">Fiat</option>
                             <option value="audi">Audi</option>
@@ -327,22 +328,30 @@
 
                     <div class="search_form_inner">
                         <label for="model">Модель</label>
-                        <input type="text" name="model" id="">
+                        <select name="proizv" class="search_form_inner_item">
+                            <option value="all_model" selected>Выберите модель</option>
+                        </select>
                     </div>
                     
                     <div class="search_form_inner">
                         <label for="proizv">Производитель</label>
-                        <select name="proizv">
-                            <option value="usa" selected>США</option>
+                        <select name="proizv" class="search_form_inner_item">
+                            <option value="all_proizv" selected>Выберите производителя</option>
+                            <option value="usa">США</option>
                             <option value="germany">Германия</option>
                             <option value="poland">Польша</option>
                         </select>
                     </div>
-                    
-                    <input type="submit" value="">
+
+                    <div class="search_form_inner">
+                        <input type="reset" value="Очистить поиск" class="reset_btn">
+                        <input type="submit" value="Найти" class="btn search_btn">
+                    </div>
                 </form>
             </div>
         </section>
+
+
     </main>
 
     <footer class="footer">
