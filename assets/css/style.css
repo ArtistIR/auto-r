@@ -1,6 +1,7 @@
 /*defolt styles*/
 *{
     transition: all .15s linear;
+    box-sizing: border-box;
 }
 *:focus{
     border: none;
@@ -50,6 +51,39 @@ mark{
     color: #E5322E;
     background-color: transparent;
 }
+
+/*TO TOP*/
+#to_top {
+    display: inline-block;
+    background-color: #E5322E;
+    width: 44px;
+    height: 140px;
+    
+    
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 44px;
+    color: #FFFFFF;
+    text-align: center;
+    writing-mode: tb;
+  }
+  #to_top:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px #E5322E solid;
+    color: #E5322E;
+  }
+  #to_top.show {
+    opacity: 1;
+    visibility: visible;
+  }
 
 /*header*/
 .header_inner{
@@ -822,6 +856,15 @@ a.footer_sup_item{
 .search_btn{
     width: 228px;
     height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_btn span{
+    padding-right: 20px;
+}
+.search_btn:hover svg path{
+    fill: #fff;
 }
 .reset_btn{
     text-align: right;
@@ -838,4 +881,97 @@ a.footer_sup_item{
 .reset_btn:hover{
     background-color: none;
     color: #E5322E;
+}
+
+/*CATALOG*/
+.catalog{
+    padding-top: 32px;
+}
+.catalog_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.catalog_item{
+    display: block;
+    width: 308px;
+    height: 470px;
+    text-align: center;
+    border: 1px #DBDBDB solid;
+    margin-bottom: 30px;
+}
+.catalog_item:hover{
+    border: 1px #E5322E solid;
+}
+.catalog_item img{
+    display: block;
+    width: 230px;
+    height: 230px;
+    margin: 24px auto;
+    overflow: hidden;
+    object-fit: cover;
+}
+.catalog_item h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #181A15;
+}
+.catalog_item h4{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 28px;
+    color: #181A15;
+    padding: 16px 0;
+}
+.catalog_btn{
+    width: 187px;
+    height: 56px;
+}
+
+/*catalog_nav*/
+.catalog_nav{
+    display: flex;
+    justify-content: center;
+}
+.catalog_nav_btn{
+    background-color: transparent;
+}
+.catalog_nav_btn:hover svg path{
+    fill: #fff;
+}
+.catalog_nav_items{
+    display: flex;
+    list-style: none;
+}
+.catalog_nav_items li a{
+    display: block;
+    width: 56px;
+    height: 56px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 56px;
+    text-align: center;
+    color: #505050;
+}
+.catalog_nav_items li a.active{
+    color: #E5322E;
+}
+.catalog_nav_items li a:hover{
+    background-color: #E5322E;
+    color: #fff;
+}
+
+/*catalog info*/
+.catalog_info{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #505050;
+
+    padding: 24px 0;
+}
+.catalog_info p{
+    padding-bottom: 28px;
 }
