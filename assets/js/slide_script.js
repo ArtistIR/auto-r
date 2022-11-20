@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.intro_slider').slick({
         dots: false,
         arrows: false,
-        infinite: true,
+        infinite: false,
         fade: false,
         asNavFor: ".intro_slider_info_item",
         speed: 1500,
@@ -13,16 +13,17 @@ $(document).ready(function(){
         nextArrow: '.btn_slide.next_slide',
         dots: true,
         appendDots: '.slide_nav_item',
-        infinite: true,
+        infinite: false,
         speed: 1500,
         asNavFor: ".intro_slider",
         loop: true,
     });
 
+
     $('.works_slider_img').slick({
         dots: false,
         arrows: false,
-        infinite: true,
+        infinite: false,
         fade: false,
         asNavFor: ".works_slider_info",
         speed: 1000,
@@ -32,8 +33,19 @@ $(document).ready(function(){
         nextArrow: '.w_btn_slide.next_slide',
         dots: true,
         appendDots: '.works_slide_nav_item',
-        infinite: true,
+        infinite: false,
         asNavFor:".works_slider_img",
         speed: 1000,
+    });
+
+
+    $('.rec_slider').slick({
+        prevArrow: '.rec_btn_slide.prev_slide',
+        nextArrow: '.rec_btn_slide.next_slide',
+        arrows: true,
+        speed: 1000,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        infinite: false,
     });
 });

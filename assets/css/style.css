@@ -571,6 +571,7 @@ a.footer_sup_item{
 /*ПОЧЕУМ МЫ*/
 .whywe{
     background: url("../img/whywe/bg_why.jpg") no-repeat center;
+    background-size: cover;
     height: 100vh;
     max-height: 812px;
     display: flex;
@@ -754,6 +755,7 @@ a.footer_sup_item{
 .second_nav{
     overflow: hidden;
     background: url("../img/decorations/sn_bg.jpg") no-repeat;
+    background-size: cover;
     display: block;
     width: 100%;
     height: 100vh;
@@ -899,6 +901,7 @@ a.footer_sup_item{
     text-align: center;
     border: 1px #DBDBDB solid;
     margin-bottom: 30px;
+    background-color: #fff;
 }
 .catalog_item:hover{
     border: 1px #E5322E solid;
@@ -912,6 +915,8 @@ a.footer_sup_item{
     object-fit: cover;
 }
 .catalog_item h3{
+    display: block;
+    max-width: 300px;
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
@@ -974,4 +979,193 @@ a.footer_sup_item{
 }
 .catalog_info p{
     padding-bottom: 28px;
+}
+
+/*CARD*/
+.card_wraper{
+    display: flex;
+    justify-content: space-between;
+}
+.card_slider{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+.card_previous{
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+}
+.card_previous li{
+    margin: 0 10px 10px 0;
+}
+.card_previous_img{
+    display: block;
+    width: 144px;
+    height: 144px;
+    object-fit: cover;
+    border: 1px #DBDBDB solid;
+}
+.card_photo img{
+    display: block;
+    width: 586px;
+    height: 586px;
+    padding: 52px;
+    overflow: hidden;
+    object-fit: cover;
+    border: 1px #DBDBDB solid;
+}
+
+.card_info{
+    padding: 50px 0 0 80px;
+}
+.card_info_title{
+    padding: 47px 0 24px 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #181A15;
+}
+.card_info table{
+    width: 100%;
+    height: 100px;
+}
+.card_info td{
+    background-color: #F8F8F8;
+    border: 1px #DBDBDB solid;
+    padding-left: 32px;
+}
+.card_info td h5{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #505050;
+}
+.card_info td h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #181A15;
+}
+.card_price{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #181A15;
+    padding-bottom: 24px;
+}
+.card_info>h5{
+    padding-top: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #505050;
+}
+.card_info>h4{
+
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    color: #181A15;
+}
+.card_btn{
+    width: 299px;
+    height: 73px;
+}
+.card_description{
+    padding-bottom: 90px;
+}
+.card_description h3{
+    padding: 80px 0 16px 0;
+    width: 100%;
+    border-bottom: 1px #E5322E solid;
+
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 30px;
+    color: #181A15;
+}
+.card_description p{
+    padding-top: 24px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #181A15;
+}
+
+/*recomendations*/
+.recomendations{
+    background: url("../img/decorations/rec_bg.jpg") no-repeat;
+    background-size: cover;
+}
+.rec_slider_wrapper{
+    position: relative;
+}
+.rec_btn_slide{
+    display: block;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    border: 1px #E5322E solid;
+    background-color: transparent;
+    color: #E5322E;
+}
+.rec_btn_slide.prev_slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+.rec_btn_slide.next_slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+.rec_btn_slide:hover{
+    background-color: #E5322E;
+    color: #fff;
+}
+
+.rec_item{
+    display: block;
+    width: 308px;
+    height: 470px;
+    text-align: center;
+    border: 1px #DBDBDB solid;
+    background-color: #fff;
+    margin: 0 10px 30px 10px;
+}
+.rec_item:hover{
+    border: 1px #E5322E solid;
+}
+.rec_item img{
+    display: block;
+    width: 230px;
+    height: 230px;
+    margin: 24px auto;
+    overflow: hidden;
+    object-fit: cover;
+}
+.rec_item h3{
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #181A15;
+}
+.rec_item h4{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 28px;
+    color: #181A15;
+    padding: 16px 0;
+}
+.catalog_btn{
+    width: 187px;
+    height: 56px;
 }
