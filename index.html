@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/adaptive_styles.css">
 
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
 
@@ -63,6 +64,29 @@
                     <a href="tel:+74957627621"><img src="assets/img/decorations/phone.svg" alt=""> +7(495)762-762-1</a>
                 </div>
                 <button class="btn header_btn">Заказать звонок</button>
+            </div>
+
+
+            <div class="burger_inner">
+                <nav class="burger_nav">
+                    <ul>
+                        <li><a href="#" class="burger_nav_item">О нас</a></li>
+                        <li><a href="#" class="burger_nav_item">Услуги</a></li>
+                        <li><a href="#" class="burger_nav_item">Каталог</a></li>
+                        <li><a href="#" class="burger_nav_item">Обслуживание</a></li>
+                        <li><a href="#" class="burger_nav_item">Контакты</a></li>
+                    </ul>
+
+                    <div class="contacts">
+                        <a href="tel:+74957627621"><img src="assets/img/decorations/phone.svg" alt=""> +7(495)762-762-1</a>
+                        <a href="tel:+74957627621"><img src="assets/img/decorations/phone.svg" alt=""> +7(495)762-762-1</a>
+                        <button class="btn header_btn">Заказать звонок</button>
+                    </div>
+                    
+                </nav>
+                <a class="burger_btn btn">
+                    <span></span>
+                </a>
             </div>
         </div>
     </header>
@@ -135,42 +159,54 @@
 
                 <div class="services_inner">
                     <div class="services_item">
-                        <img src="assets/img/services/service_1.jpg" alt="" class="services_preview">
+                        <div class="services_item_img">
+                            <img src="assets/img/services/service_1.jpg" alt="" class="services_preview">
+                        </div>
                         <div class="serv_item_content">
                             <h4 class="services_item_title">Кузовной ремонт</h4>
                             <a href="#" class="services_item_href btn">→</a>
                         </div>
                     </div>
                     <div class="services_item">
-                        <img src="assets/img/services/service_2.jpg" alt="" class="services_preview">
+                        <div class="services_item_img">
+                            <img src="assets/img/services/service_2.jpg" alt="" class="services_preview">
+                        </div>
                         <div class="serv_item_content">
                             <h4 class="services_item_title">Реставрация</h4>
                             <a href="#" class="services_item_href btn">→</a>
                         </div>
                     </div>
                     <div class="services_item">
-                        <img src="assets/img/services/service_3.jpg" alt="" class="services_preview">
+                        <div class="services_item_img">
+                            <img src="assets/img/services/service_3.jpg" alt="" class="services_preview">
+                        </div>
                         <div class="serv_item_content">
                             <h4 class="services_item_title">Техническое обслуживание</h4>
                             <a href="#" class="services_item_href btn">→</a>
                         </div>
                     </div>
                     <div class="services_item">
-                        <img src="assets/img/services/service_4.jpg" alt="" class="services_preview">
+                        <div class="services_item_img">
+                            <img src="assets/img/services/service_4.jpg" alt="" class="services_preview">
+                        </div>
                         <div class="serv_item_content">
                             <h4 class="services_item_title">Слесарный ремонт</h4>
                             <a href="#" class="services_item_href btn">→</a>
                         </div>
                     </div>
                     <div class="services_item">
-                        <img src="assets/img/services/service_5.jpg" alt="" class="services_preview">
+                        <div class="services_item_img">
+                            <img src="assets/img/services/service_5.jpg" alt="" class="services_preview">
+                        </div>
                         <div class="serv_item_content">
                             <h4 class="services_item_title">Слесарный ремонт</h4>
                             <a href="#" class="services_item_href btn">→</a>
                         </div>
                     </div>
                     <div class="services_item">
-                        <img src="assets/img/services/service_6.jpg" alt="" class="services_preview">
+                        <div class="services_item_img">
+                            <img src="assets/img/services/service_6.jpg" alt="" class="services_preview">
+                        </div>
                         <div class="serv_item_content">
                             <h4 class="services_item_title">Запасные части</h4>
                             <a href="#" class="services_item_href btn">→</a>
@@ -651,5 +687,6 @@
     <script type="text/javascript" src="assets/js/slide_script.js" defer></script>
     <script type="text/javascript" src="assets/js/to_top.js" defer></script>
     <script type="text/javascript" src="assets/js/cardGallery.js" defer></script>
+    <script type="text/javascript" src="assets/js/burger.js" defer></script>
 </body>
 </html>
