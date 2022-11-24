@@ -5,6 +5,7 @@
 }
 *:focus{
     border: none;
+    outline: none;
 }
 body{
     font-family: 'Nunito Sans', sans-serif;
