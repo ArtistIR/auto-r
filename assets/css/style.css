@@ -574,10 +574,9 @@ a.footer_sup_item{
 .whywe{
     background: url("../img/whywe/bg_why.jpg") no-repeat center;
     background-size: cover;
-    height: 100vh;
-    max-height: 812px;
     display: flex;
     align-items: center;
+    padding: 60px 0;
 }  
 .container-whywe{
     display: flex;
@@ -690,6 +689,7 @@ a.footer_sup_item{
     display: flex;
     justify-content: space-between;
     padding-bottom: 96px;
+    flex-wrap: wrap;
 }
 .sparts_card{
     display: block;
@@ -700,6 +700,7 @@ a.footer_sup_item{
     border: 1px #DBDBDB solid;
 
     position: relative;
+    margin: 10px;
 }
 .sparts_card:hover{
     transform: translateY(50px);

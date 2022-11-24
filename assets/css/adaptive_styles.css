@@ -177,6 +177,10 @@
     .services_item{
         max-width: 30%;
     }
+    .whywe_left_side{
+        width: 100%;
+        max-width: 400px;
+    }
 }
 @media screen and (max-width: 1200px) {
     .container,
@@ -212,6 +216,9 @@
         max-width: none;
         text-align: right;
     }
+    .right_side_card{
+        margin-left: 10px;
+    }
 }
 @media screen and (max-width: 1090px) {
     .container,
@@ -241,6 +248,9 @@
     .works_slider_info{
         padding: 105px 50px 32px 30px;
     }
+    .right_side_card{
+        width: 240px;
+    }
 }
 @media screen and (max-width: 992px) {
     .container,
@@ -256,6 +266,9 @@
     }
     .serv_item_content{
         padding: 32px 10px;
+    }
+    .sparts_inner{
+        justify-content: space-evenly;
     }
 }
 @media screen and (max-width: 930px) {
@@ -310,6 +323,34 @@
     .works_slider_info{
         padding: 50px 50px 30px 30px;
     }
+    .right_side{
+        justify-content: space-between;
+        flex-direction: row;
+        flex-flow: row;
+    }
+    .container-whywe{
+        flex-direction: column;
+    }
+    .right_side_card{
+        width: 170px;
+        height: 230px;
+    }
+    .right_side_card:nth-child(even) {
+        margin-top: -40px;
+    }
+    .right_side_card h3 {
+        padding: 20px 0;
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .right_side_card h3::before {
+        left: 0;
+    }
+    .whywe_left_side {
+        width: 100%;
+        max-width: none;
+        padding-bottom: 40px;
+    }
 }
 @media screen and (max-width: 768px) {
     .container{
@@ -357,6 +398,19 @@
     .intro .prev_slide,
     .intro .next_slide{
         transform: rotate(-90deg);
+    }
+    .right_side{
+        flex-wrap: wrap;
+    }
+    .right_side_card:nth-child(even) {
+        margin-top: 21px;
+    }
+    .right_side_card{
+        width: 260px;
+        height: 260px;
+    }
+    .right_side_card h3{
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 650px) {
@@ -411,6 +465,9 @@
     }
     .serv_item_content{
         padding: 32px 48px;
+    }
+    .right_side{
+        justify-content: center;
     }
 }
 @media screen and (max-width: 500px) {
