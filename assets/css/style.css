@@ -198,7 +198,7 @@ mark{
 .footer_sub h4{
     display: block;
     width: 100%;
-    max-width: 140px;
+    max-width: 160px;
 
     font-weight: 400;
     font-size: 16px;
@@ -1132,6 +1132,7 @@ a.footer_sup_item{
     border: 1px #DBDBDB solid;
     background-color: #fff;
     margin: 0 10px 30px 10px;
+    overflow: hidden;
 }
 .rec_item:hover{
     border: 1px #E5322E solid;

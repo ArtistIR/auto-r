@@ -47,5 +47,28 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 2,
         infinite: false,
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToScroll: 1,
+                slidesToShow: 3
+              }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToScroll: 1,
+                  slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                  slidesToScroll: 1,
+                  slidesToShow: 1
+                }
+            }
+          ]
     });
 });
