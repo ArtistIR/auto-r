@@ -430,6 +430,12 @@
     .footer_sub h4{
         padding-left: 10px;
     }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 768px) {
     .container{
@@ -688,6 +694,7 @@
         height: auto;
         padding: 15px 0;
     }
+    
 }
 @media screen and (max-width: 480px) {
     .container,
